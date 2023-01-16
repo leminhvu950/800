@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.run = ({ api, event, args }) => {
     const request = require("request");
-    if (!args[0] || typeof parseInt(args[0]) !== "number") return api.sendMessage(`+++ Dịch Vụ Của Admin +++\n🔰Nhận All Về Dịch Vụ Facebook🔰\n& Liên Hệ: https://www.facebook.com/anhminh.levan.1\n+++ Mọi người ủng hộ adminn vài đồng ăn sángg nhó +++\n$ LÊ MINH $`, event.threadID, event.messageID);
+    if (!args[0] || typeof parseInt(args[0]) !== "number") return api.sendMessage(`+++ Dịch Vụ Của Admin +++\n🔰Nhận All Về Dịch Vụ Facebook🔰\n& Liên Hệ: https://www.facebook.com/lmv208\n+++ Mọi người ủng hộ adminn vài đồng ăn sángg nhó +++\n$ LÊ MINH Vũ $`, event.threadID, event.messageID);
     return request(`https://nhentai.net/api/gallery/${parseInt(args[0])}`, (error, response, body) => {
         var codeData = JSON.parse(body);
         if (codeData.error == true) return api.sendMessage(getText('cantFindHentai'), threadID, messageID);
