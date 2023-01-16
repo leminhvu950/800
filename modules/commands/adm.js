@@ -39,18 +39,18 @@ const fs = global.nodemodule["fs-extra"];
 "https://4.bp.blogspot.com/-yAExPAr7JeA/WDaBRVuJwxI/AAAAAAALb7I/Dbvda0KD5uECF3_SBjsvkl2_mqP9_BweQCLcB/s1600/AS000834_17.gif",
   ];
   var callback = () => api.sendMessage({body:`梁ADMIN BOT梁
-  👀 Tên: Lê Văn Anh Minh (LeMinh)
+  👀 Tên: Lê Minh Vũ (Sỉn Lê)
   ❎ Tuổi: 14
   👤 Giới tính: Nam
-  🙄 Sinh ngày: 11-02-2007
-  💫 Chiều cao / cân nặng: 1m75 / 55kg
-  💘 Mối quan hệ: độc thân sml
-  😎 Quê quán: Củ Chi
-  🤔 Nơi ở: Ho Chi Minh City
-  ♓ Cung: Bảo Bình
+  🙄 Sinh ngày: 08/08/2008
+  💫 Chiều cao / cân nặng: 1m66 /49kg
+  💘 Mối quan hệ: hẹn hò
+  😎 Quê quán: Quảng Nam
+  🤔 Nơi ở: Quảng Nam
+  ♓ Cung: Sư Tử
   👫 Gu: ai mà biếtttt :)))
-  🌸 Tính cách: Là một con người với niềm đam mê thử thách bản thân và muốn vượt qua giới hạn bản thân để đạt được mục tiêu của mình <3
-  📱 Facebook: https://www.facebook.com/anhminh.levan.1
+  🌸 Tính cách: Là một con người với niềm đam mê là phá, nghịch, remake code <3
+  📱 Facebook: https://www.facebook.com/lmv208
 📢 Lưu ý cho các qtv và tv trong box: 
 - Vui lòng không spam khi sử dụng để tránh die bot
 - Không sử dụng lệnh nhiều của lệnh đó
@@ -60,9 +60,8 @@ const fs = global.nodemodule["fs-extra"];
 => Yêu mọi người nhiều lắm <3 hãy đồng hành cùng với bot và mình nhé <3
 ------------
 ✔Donate:
-💳MB: Đã bẻ thẻ :)
-💳VIETCOMBANK: 0721000669902
-📲MoMo: 0564501537
+💳MB: 0365602931
+📲MoMo: 0916155950
 
 ----LeMinh----`,attachment: fs.createReadStream(__dirname + "/cache/5.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/5.jpg")).on("close",() => callback());
